@@ -11,4 +11,4 @@ issuemoa/eureka 954d2adb5a88    1 hours ago    510MB    latest
 ```
 
 ### 3. 도커 컨테이너 실행
-```$ docker run -ti -p8761:8761 issuemoa/eureka```
+```$ docker run -d --name=issuemoa-eureka -p8761:8761 issuemoa/eureka```
