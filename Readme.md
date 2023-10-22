@@ -4,8 +4,8 @@
 - . (현재 위치 기준에서 Dockerfile을 찾는다.)
 
 ### 2. 도커 이미지 확인
+```$ docker image ls```
 ```
-$ docker image ls
 REPOSITORY      IMAGE ID        CREATED        SIZE     TAG          
 issuemoa/eureka 954d2adb5a88    1 hours ago    510MB    latest
 ```
