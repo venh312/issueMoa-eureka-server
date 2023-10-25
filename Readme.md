@@ -22,7 +22,7 @@ issuemoa/eureka 954d2adb5a88    1 hours ago    510MB    latest
 
 ## 📌 도커 컴포즈
 ### 도커 컴포즈 실행
-```docker-compose up```
+```$ docker-compose up```
 
 ### 실행중 컨테이너 확인
-```docker ps```
+```$ docker ps```
