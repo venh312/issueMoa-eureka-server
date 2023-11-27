@@ -21,6 +21,18 @@ services:
       issuemoa:
         aliases:
           - "issuemoa-eureka"
+  issuemoa-voca:
+    image: issuemoa/voca:latest
+    ports:
+      - "17080:17080"
+    environment:
+      - "SPRING_PROFILES_ACTIVE=dev"
+    networks:
+      issuemoa:
+        aliases:
+          - "issuemoa-voca"
+    depends_on:
+      - issuemoa-config
 networks:
   issuemoa: # 사용할 네트워크 정의
     driver: bridge
