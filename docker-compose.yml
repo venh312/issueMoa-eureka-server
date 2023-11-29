@@ -5,8 +5,6 @@ services:
     image: issuemoa/config:latest # 사용할 Docker 이미지 지정
     ports:
       - "8888:8888" # 호스트 포트와 컨테이너 포트 매핑
-    environment:
-      - "SPRING_PROFILES_ACTIVE=dev" # 도커 이미지에 환경 변수를 전달
     networks:
       issuemoa: # 서비스가 속한 네트워크 이름을 지정
         aliases:
@@ -15,8 +13,6 @@ services:
     image: issuemoa/eureka:latest
     ports:
       - "8761:8761"
-    environment:
-      - "SPRING_PROFILES_ACTIVE=dev"
     networks:
       issuemoa:
         aliases:
@@ -25,8 +21,8 @@ services:
     image: issuemoa/voca:latest
     ports:
       - "17080:17080"
-    environment:
-      - "SPRING_PROFILES_ACTIVE=dev"
+#    environment:
+#      - "SPRING_PROFILES_ACTIVE=docker"
     networks:
       issuemoa:
         aliases:
