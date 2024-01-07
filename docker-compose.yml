@@ -19,6 +19,14 @@ services:
       issuemoa:
         aliases:
           - "issuemoa-eureka"
+  issuemoa-gateway:
+    image: issuemoa/gateway:latest
+    ports:
+      - "8000:8000"
+    networks:
+      issuemoa:
+        aliases:
+          - "issuemoa-gateway"
   issuemoa-board:
     image: issuemoa/board:latest
     ports:
