@@ -47,14 +47,14 @@ services:
           - "issuemoa-users"
     depends_on:
       - issuemoa-config
-  issuemoa-voca:
-    image: issuemoa/voca:latest
+  issuemoa-learning:
+    image: issuemoa/learning:latest
     ports:
       - "17080:17080"
     networks:
       issuemoa:
         aliases:
-          - "issuemoa-voca"
+          - "issuemoa-learning"
     depends_on:
       - issuemoa-config
 networks:
